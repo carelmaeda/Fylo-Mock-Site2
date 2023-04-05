@@ -12,46 +12,55 @@
     <title>Frontend Mentor | Fylo landing page with two column layout</title>
 
 </head>
-<body>
+<body class="body">
+     
     <div class="container">
 
-        <!-- NAV -->
-        <h1>Fylo</h1>
-        <nav>
-            <img class="logo" alt="logo" src="images/logo.svg" />
-            <ul class="nav-list">
-                <li class="nav-link">Features</li>
-                <li class="nav-link">Team</li>
-                <li class="nav-link">Sign In</li>
-            </ul>
-        </nav>
+       <!-- NAV -->
+       <nav class="nav">
+           <img class="logo" alt="logo" src="images/logo.svg" />
+           <ul class="nav-list">
+            <li><a href="#" class="nav-link">Features</a></li>
+            <li><a href="#" class="nav-link">Team</a></li>
+            <li><a href="#" class="nav-link">Sign In</a></li>
+           </ul>
+       </nav>
 
         <!-- CONTENT START -->
-        <main>
+        <main class="main">
+
             <!-- Welcome Section -->
-            <section class="welcome">
-                <img class="img-section" alt="welcomeimage" src="images/illustration-1.svg" />
+            <h1>Fylo</h1>
+            <section class="section welcome col-2">
+                <img class="section-img" alt="welcomeimage" src="images/illustration-1.svg" />
+                <div class="section-content welcome">
                 <h2>All your files in one secure location, accessible anywhere.</h2>
                 <p>
                     Fylo stores your most important files in one secure location. 
   Access them wherever you need, share and collaborate with friends, 
   family, and co-workers.
                 </p>
-                <form>
+                <form class="form">
                     <label class="screenReaderOnly" for="email">Email:</label>
-                    <input type="email" id="email" placeholder="Enter your email..." name="email" required>
-                    <button type="submit">Get Started</button>
+                    <input class="input" type="email" id="email" placeholder="Enter your email..." name="email" required>
+                    <button class="btn" type="submit">Get Started</button>
                 </form>
+                </div>
             </section>
+
+
             <!-- About Section -->
-            <section class="about">
-                <img class="img-section" alt="welcomeimage" src="images/illustration-2.svg" />
+
+            <section class="section about col-2">
+                <img class="section-img" alt="welcomeimage" src="images/illustration-2.svg" />
+
+                <div class="section-content ">
                 <h2>Stay productive, wherever you are</h2>
                 <p>
                     Never let location be an issue when accessing your files. Fylo has you 
   covered for all of your file storage needs.
                 </p>
-
+                
                 <p>
                     Securely share files and folders with friends, family and colleagues for 
   live collaboration. No email attachments required!
@@ -59,9 +68,8 @@
                 <span class="cta-link">
                     <a>See how Fylo works<i class="fa fa-arrow-circle-right" aria-hidden="true"></i></a>
                 </span>
-            </section>
             <!-- Testimonial Section -->
-            <section class="testimonials">
+            <div class="testimonials">
                 <h2 class="screenReaderOnly">testimonials</h2>
                 <i class="fa fa-quote-left" aria-hidden="true"></i>
                 <div class="test-small">
@@ -75,47 +83,80 @@
                     <div>Kyle Burton</div>
                     <div>Founder & CEO, Huddle</div>
                 </div>
-
+            </div>
+             </div>
             </section>
 
 
         </main>
-        <!-- Subfooter Section -->
+      
+       
+    </div>
+     <!-- FOOTER -->
+       <!-- Subfooter Section -->
         <section class="subfooter">
+            <div class="container col-2">
+            <div class="">
             <h2>Get early access today</h2>
             <p>
                 It only takes a minute to sign up and our free starter tier is extremely generous. 
   If you have any questions, our support team would be happy to help you.
             </p>
-            <form>
+        </div>
+            <form class="form">
                 <label class="screenReaderOnly" for="email">Email:</label>
                 <input type="email" id="email2" placeholder="Enter your email." name="email" required>
-                <button type="submit">Get Started For Free</button>
+                <button class="btn" type="submit">Get Started For Free</button>
             </form>
+        </div>
         </section>
-        <!-- FOOTER -->
-        <footer>
-            <div class="footer-block">
+
+
+        <footer class="footer">
+
+            <div class="container">
             <img class="footer-logo" alt="logo" src="images/logo.svg" />
-            <div class="footer-link">
-                <i class="fa fa-phone" aria-hidden="true"></i>+1-543-123-4567</div>
-            <div class="footer-link">
-                <i class="footer-link fa fa-envelope" aria-hidden="true"></i>example@fylo.com</div>
-                </div>
+            
+            <div class="col-4">
 
+            <!-- Block 1 -->
             <div class="footer-block">
-            <div class="footer-link">About Us</div>
-            <div class="footer-link">Jobs</div>
-            <div class="footer-link">Press</div>
-            <div class="footer-link">Blog</div>
-                </div>
+            <div class="footer-link">
+               <a href="">
+                <i class="fa fa-phone" aria-hidden="true"></i>+1-543-123-4567</a>
+            </div>
+            <div class="footer-link">
+                <a href=""><i class="footer-link fa fa-envelope" aria-hidden="true"></i>example@fylo.com</a>
+            </div>
+            </div>
 
+            <!-- Block 2 -->
             <div class="footer-block">
-            <div class="footer-link">Contact Us</div>
-            <div class="footer-link">Terms</div>
-            <div class="footer-link">Privacy</div>
-                </div>
+                <a href="#" class="footer-link">About</a>
+                <a href="#" class="footer-link">Jobs</a>
+                <a href="#" class="footer-link">Press</a>
+                <a href="#" class="footer-link">Blog</a>
+            </div>
+
+            <!-- Block 3 -->
+            <div class="footer-block">
+                <a href="#" class="footer-link">Contact Us</a>
+                <a href="#" class="footer-link">Terms</a>
+                <a href="#" class="footer-link">Privacy</a>
+            </div>
+
+            <!-- Block 4 SOCIAL-->
+            <div class="footer-block social">
+                <a href="#" class="footer-link"><i class="footer-link fa fa-instagram" aria-hidden="true"></i></a>
+                <a href="#" class="footer-link"><i class="footer-link fa fa-twitter" aria-hidden="true"></i></a>
+                <a href="#" class="footer-link"><i class="footer-link fa fa-facebook" aria-hidden="true"></i></a>
+            </div>
+            </div>     
+            </div>    
+
+
+        
+            </div>
         </footer>
-    </div>
 </body>
 </html>
